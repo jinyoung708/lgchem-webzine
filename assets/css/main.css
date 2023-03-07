@@ -1,5 +1,8 @@
 @charset "UTF-8";
+@import url('NanumSquareRound.css'); /* 폰트css */
 
+.section1 .main_ttl {position: relative; padding-left: 144px; font-size: 45px; font-weight: 500; color: #191919; letter-spacing: -0.05em; line-height: 1.33;}
+.section1 .main_ttl .today {position: absolute; left: 0; top: 50%; width: 118px; height: 124px; line-height: 157px; background: url('../images/main/ico_cal.png') no-repeat center; text-align: center; font-size: 47px; color: #191919; letter-spacing: -0.04em; font-family: 'NanumSquareRound'; font-weight: 500; transform: translateY(-50%);}
 
 
 
