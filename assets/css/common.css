@@ -21,6 +21,7 @@ img {max-width: 100%;}
 #header .gnb_header > .container {position: relative; text-align: center;}
 #header .gnb_header .logo {position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 #header .gnb_header .btn-box {position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 0;}
+#header .gnb_header .btn-box a {vertical-align: middle;}
 #header .gnb_header .btn-box a:not(:first-child) {margin-left: 22px;}
 #header .gnb_header .btn-box .user-btn {display: inline-block; width: 21px; height: 24px; background: url('../images/common/ico_user.png') no-repeat center;}
 #header .gnb_header .btn-box .global-btn {display: inline-block; width: 25px; height: 24px; background: url('../images/common/ico_global.png') no-repeat center;}
@@ -49,36 +50,25 @@ img {max-width: 100%;}
 
 @media screen and (max-width:1200px) {
     /* common */
-    .container {padding: 0 10px;}
+    .container {padding: 0 24px;}
 }
 
 @media screen and (max-width:991px) {
     /* common */
     .m_hide {display: none !important;}
     .pc_hide {display: block;}
-    #content {padding-bottom: 191px;}
+    #content {padding-bottom: 108px;}
 
 
     /* header */
-    #header .gnb_header {top: -100px; transition: all 0.3s;}
-    #header .gnb_header > .container {position: relative; border-bottom: 4px solid #a50034;}
-    #header .head_top {justify-content: center;}
-    #header .head_top .txt_box {position: absolute; left: 40px; top: 50%; transform: translateY(-50%);}
-    #header .head_top .txt_box span {padding-top: 0;}
-    #header .head_top .txt_box .select_box {display: none;}
-    #header .m_gnb_open {display: block; position: absolute; right: 40px; top: 50%; width: 30px; height: 23px; transform: translateY(-50%);}
-    #header .m_gnb_open span {display: block; position: absolute; left: 0; width: 100%; height: 3px; background-color: #7d7d7d; transition: all 0.3s;}
-    #header .m_gnb_open span:nth-child(1) {top: 0;}
-    #header .m_gnb_open span:nth-child(2) {top: 50%; margin-top: -1.5px;}
-    #header .m_gnb_open span:nth-child(3) {top: 100%; margin-top: -3px;}
-    #header .m_gnb_open.show span:nth-child(1) {top: 50%; margin-top: -1.5px; transform: rotate(45deg);}
-    #header .m_gnb_open.show span:nth-child(2) {width: 0;}
-    #header .m_gnb_open.show span:nth-child(3) {top: 50%; margin-top: -1.5px; transform: rotate(-45deg);}
+    #header.scrolled {padding-top: 56px;}
+    #header .gnb_header {padding: 28px 0;}
+    #header .gnb_header .logo {left: 23px; width: 49px;}
+    #header .gnb_box {right: -100%; padding: 0 20px;}
     #header .gnb_box .gnb {display: none;}
-    #header .gnb_box {right: -200%;}
-    #header .gnb_box.show {position: fixed; right: 0; z-index: 999; max-width: 559px; width: 100%; height: 100%; padding-bottom: 70px; overflow-y: auto; border-top: 8px solid #a50034; background-color: #333; transition: right 0.3s;}
-    #header .gnb_box.show .m_gnb {display: block;}
-    #header .gnb_box.show .container {background-color: transparent;}
+    #header .gnb_header .btn-box {padding-right: 23px;}
+    #header .gnb_header .btn-box .user-btn {display: none;}
+    #header .gnb_header .btn-box .global-btn {display: none;}
     #header .gnb_box .m_gnb {padding: 50px 0;}
     #header .gnb_box .m_gnb > li {border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
     #header .gnb_box .m_gnb > li a {display: block; font-size: 16px; color: #fff; padding: 15px 20px; text-transform: uppercase;}
@@ -86,37 +76,23 @@ img {max-width: 100%;}
     #header .gnb_box .m_gnb .sub_gnb {display: none; padding: 10px 20px; background-color: #222;}
     #header .gnb_box .m_gnb .sub_gnb > li a {font-size: 14px; padding: 10px 20px;}
     #header .m_gnb_close {position: absolute; right: 20px; top: 20px; width: 25px; height: 25px; background: url('../images/common/ico_gnb_close.png') no-repeat center/contain;}
-    #header .gnb_box.show + .m_gnb_bg {display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100vh; z-index: -1; background-color: rgba(51,51,51,0.3);}
-    #header.scrolled {padding-top: 118px;}
-    #header.scrolled .gnb_box {left: auto; top: auto;}
-    #header.scrolled .gnb_header {position: fixed; left: 0; top: 0; width: 100%;}
+    #header .m_gnb_open {display: inline-block; position: relative; width: 24px; height: 20px; margin-left: 18px; vertical-align: middle;}
+    #header .m_gnb_open span {display: block; position: absolute; left: 0; width: 100%; height: 3px; background-color: #6d6d6d; transition: all 0.3s;}
+    #header .m_gnb_open span:nth-child(1) {top: 0;}
+    #header .m_gnb_open span:nth-child(2) {top: 50%; margin-top: -1.5px;}
+    #header .m_gnb_open span:nth-child(3) {top: 100%; margin-top: -3px;}
+    #header .m_gnb_open.show span:nth-child(1) {top: 50%; margin-top: -1.5px; transform: rotate(45deg);}
+    #header .m_gnb_open.show span:nth-child(2) {width: 0;}
+    #header .m_gnb_open.show span:nth-child(3) {top: 50%; margin-top: -1.5px; transform: rotate(-45deg);}
+    #header .gnb_box.show ~ .m_gnb_bg {display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100vh; z-index: -1; background-color: rgba(51,51,51,0.3);}
+    #header .gnb_box.show {position: fixed; right: 0; top: 56px; bottom: 0; z-index: 999; max-width: 559px; width: 100%; padding-bottom: 70px; overflow-y: auto; background-color: #333; transition: right 0.3s;}
+    #header .gnb_box.show .m_gnb {display: block;}
 
     
     /* footer */
-    #footer {height: 191px; text-align: center;}
-    #footer .copyright {line-height: 1.55;}
-}
-
-@media screen and (max-width:640px) {
-    /* common */
-    #content {padding-bottom: 120px;}
-
-
-    /* header */
-    #header .head_top {height: 57px;}
-    #header .head_top .logo {max-width: 149px;}
-    #header .m_gnb_open {right: 20px; width: 22px; height: 15px;}
-    #header .m_gnb_open span {height: 2px;}
-    #header .m_gnb_open span:nth-child(2) {margin-top: -1px;}
-    #header .m_gnb_open span:nth-child(3) {margin-top: -2px;}
-    #header .m_gnb_open.show span:nth-child(1), 
-    #header .m_gnb_open.show span:nth-child(3) {margin-top: -1px;}
-    #header .head_top .txt_box {left: 20px;}
-    #header .head_top .txt_box span {font-size: 12px;}
-    #header.scrolled {padding-top: 57px;}
-
-
-    /* footer */
-    #footer {height: 120px;}
-    #footer .copyright {font-size: 13px;}
+    #footer {height: 108px; background-color: #9b9b9b; border-top: none;}
+    #footer .foot_logo {display: block; width: 65px; margin: 0 auto 15px;}
+    #footer .copyright {font-size: 12px; color: #fff;}
+    #footer .copyright::after {margin: 0 18px;}
+    #footer .link {font-size: 12px; color: #fff;}
 }

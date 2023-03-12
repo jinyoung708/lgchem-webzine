@@ -8,7 +8,7 @@
 /* reset 영역 */
 html,body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,th,td,button{margin:0;padding:0;border:0;font:inherit;}
 html,body{height:100%;}
-body{-webkit-text-size-adjust:none;font-family:'LGSmHaT', Dotum, "돋움", sans-serif;font-size:14px;font-weight:400;color:#444041;}
+body{-webkit-text-size-adjust:none;font-family:'LGSmHaT', Dotum, "돋움", sans-serif;font-size:14px;font-weight:400;color:#191919;}
 input,textarea,select,button{font-family:inherit;font-size:inherit;font-weight:inherit;padding:0;margin:0;}
 input[type="button"],input[type="text"],input[type="image"],input[type="submit"],input[type="password"],textarea{-webkit-appearance:none;border-radius:0;}
 input[type="checkbox"]{-webkit-appearance:none;-ms-appearance:none;}
