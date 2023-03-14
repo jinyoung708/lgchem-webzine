@@ -34,11 +34,6 @@ $(function(){
             return false;
         }
     });
-
-    $("#header .select_box .select_btn").click(function(){
-        $(this).next(".list").stop().slideToggle();
-        return false;
-    });
     
     $(window).on("scroll", function(){
         pageY = window.pageYOffset;

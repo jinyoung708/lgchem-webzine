@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css');
-
 
 /* common */
 * {box-sizing: border-box; letter-spacing: -0.025em;}
@@ -29,14 +27,20 @@ img {max-width: 100%;}
 #header .gnb_box {padding: 0 130px;}
 #header .gnb_box .gnb {display: inline-flex; justify-content: space-around; gap: 36px;}
 #header .gnb_box .gnb > li {position: relative;}
-#header .gnb_box .gnb > li > a {position: relative; display: flex; align-items: center; padding: 0 7px; height: 38px; font-size: 20px; font-weight: 300; color: #000; text-transform: uppercase;}
+#header .gnb_box .gnb > li > a {position: relative; display: flex; align-items: center; height: 38px; font-size: 20px; font-weight: 300; color: #000; text-transform: uppercase;}
 #header .gnb_box .gnb > li > a::after {display: inline-block; content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background-color: #404040; transition: width 0.3s;}
-#header .gnb_box .gnb > li > a:hover::after {width: 100%;}
+#header .gnb_box .gnb > li:hover > a::after {width: 100%;}
+#header .gnb_box .gnb > li .sub_gnb {display: none; position: absolute; z-index: 1; left: 0; top: 100%; width: 100%; text-align: center;}
+#header .gnb_box .gnb > li .sub_gnb > li {margin-top: 10px;}
+#header .gnb_box .gnb > li .sub_gnb > li a {display: block; padding: 10px; font-size: 15px; text-transform: uppercase;}
+#header .gnb_box .gnb > li .sub_gnb > li a:hover {color: #c10b34; font-weight: 500;}
+#header .gnb_bg {display: none; position: fixed; top: 138px; left: 0; background-color: #fff; width: 100%; height: 150px; box-shadow: 0 5px 10px rgb(211 211 211 / 50%); overflow: hidden;}
 #header .gnb_box .m_gnb, #header .m_gnb_open {display: none;}
 #header .m_gnb_bg {display: none;}
-#header.scrolled {padding-top: 138px;}
+#header.scrolled {padding-top: 98px;}
 #header.scrolled .gnb_header {position: fixed; left: 0; top: 0; width: 100%; z-index: 1;}
-#header.scrolled .gnb_bg {top: 65px;}
+#header.scrolled .gnb_bg {top: 98px;}
+#header.scrolled .gnb_header {padding: 30px 0;}
 
 
 /* footer */
@@ -72,7 +76,7 @@ img {max-width: 100%;}
     #header .gnb_box .m_gnb {padding: 50px 0;}
     #header .gnb_box .m_gnb > li {border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
     #header .gnb_box .m_gnb > li a {display: block; font-size: 16px; color: #fff; padding: 15px 20px; text-transform: uppercase;}
-    #header .gnb_box .m_gnb > li.active > a {background-color: #a50034;}
+    #header .gnb_box .m_gnb > li.active > a {background-color: #c10b34;}
     #header .gnb_box .m_gnb .sub_gnb {display: none; padding: 10px 20px; background-color: #222;}
     #header .gnb_box .m_gnb .sub_gnb > li a {font-size: 14px; padding: 10px 20px;}
     #header .m_gnb_close {position: absolute; right: 20px; top: 20px; width: 25px; height: 25px; background: url('../images/common/ico_gnb_close.png') no-repeat center/contain;}

@@ -36,6 +36,17 @@
 .section3 .event_box .more_btn {display: inline-block; min-width: 143px; height: 35px; line-height: 35px; font-size: 14px; font-weight: 300; color: #fff; background: #000; text-align: center; border-radius: 35px;}
 .section3 .event_box .more_btn::after {display: inline-block; content: ''; width: 11px; height: 11px; margin-left: 10px; margin-top: -2px; background: url('../images/main/ico_arr.png') no-repeat center; vertical-align: middle;}
 
+.layer_popup_wrap { height: 0; overflow: hidden; visibility: hidden; } 
+.layer_popup_wrap .bg { position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.75; } 
+.layer_popup_wrap .layer_popup { position: fixed; z-index: 9999; left: 50%; top: 50%; width: 700px; max-width: 100%; visibility: hidden; opacity: 0; transition: opacity 0.5s, visibility 0.5s; background-color: #f1f1f1; transform: translate(-50%, -50%); text-align: right;} 
+.layer_popup_wrap .layer_popup .close_btn { position: absolute; right: 0; top: 0; width: 20px; height: 20px; z-index: 10; background-color: #fff; } 
+.layer_popup_wrap .layer_popup .check_ipt {margin-right: 5px; cursor: pointer;}
+.layer_popup_wrap .layer_popup .check_ipt input { margin-top: -2px; appearance: auto; -webkit-appearance: auto; vertical-align: middle;} 
+.layer_popup_wrap .layer_popup .img {display: flex;}
+.layer_popup_wrap.show { height: auto; visibility: visible; } 
+.layer_popup_wrap.show .layer_popup { visibility: visible; opacity: 1; }
+
+
 
 
 @media screen and (max-width:991px) {
