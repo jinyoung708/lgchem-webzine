@@ -34,12 +34,12 @@ img {max-width: 100%;}
 #header .gnb_box .gnb > li .sub_gnb > li {margin-top: 10px;}
 #header .gnb_box .gnb > li .sub_gnb > li a {display: block; padding: 10px; font-size: 15px; text-transform: uppercase;}
 #header .gnb_box .gnb > li .sub_gnb > li a:hover {color: #c10b34; font-weight: 500;}
-#header .gnb_bg {display: none; position: fixed; top: 138px; left: 0; background-color: #fff; width: 100%; height: 150px; box-shadow: 0 5px 10px rgb(211 211 211 / 50%); overflow: hidden;}
+#header .gnb_bg {display: none; position: fixed; top: 138px; left: 0; background-color: #fff; width: 100%; height: 150px; box-shadow: 0 10px 10px rgb(211 211 211 / 50%); overflow: hidden;}
 #header .gnb_box .m_gnb, #header .m_gnb_open {display: none;}
 #header .m_gnb_bg {display: none;}
 #header.scrolled {padding-top: 98px;}
 #header.scrolled .gnb_header {position: fixed; left: 0; top: 0; width: 100%; z-index: 1;}
-#header.scrolled .gnb_bg {top: 98px;}
+#header.scrolled .gnb_bg {top: 97px;}
 #header.scrolled .gnb_header {padding: 30px 0;}
 
 
