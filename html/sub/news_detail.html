@@ -26,13 +26,97 @@
 <body>
     <!-- wrap -->
     <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <dl class="skip_navi">
+                <dt class="blind"><strong>바로가기 메뉴</strong></dt>
+                <dd><a href="#content">본문 바로가기</a></dd>
+                <dd><a href="#gnb">주메뉴 바로가기</a></dd>
+            </dl>
+
+            <div class="gnb_header">
+                <div class="container">
+                    <h1 class="logo"><a href="#"><img src="../../assets/images/common/head_logo.png" alt="ㅎㅎ"></a></h1>
+                    <div class="gnb_box">
+                        <ul id="gnb" class="gnb">
+                            <li>
+                                <a href="#">newsroom</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">customer value</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">company</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">culture</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">event</a>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                    <li><a href="#">menu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- [D] m_gnb안에 들어가는 항목은 js에서 작업 -->
+                        <ul id="mgnb" class="m_gnb"></ul>
+                    </div>
+                    <div class="btn-box">
+                        <a href="#" class="user-btn"><span class="blind">user</span></a>
+                        <a href="#" class="global-btn"><span class="blind">global</span></a>
+                        <a href="#" class="sch-btn"><span class="blind">search</span></a>
+                        <button type="button" class="m_gnb_open">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="m_gnb_bg"></div>
+                    <div class="gnb_bg"></div>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+
         <!-- content -->
         <div id="content">
             <div class="news_wrap">
+                <div class="sub_top_box bg_blue">
+                    <div class="container">
+                        <p class="menu">NEWSROOM</p>
+                        <p class="ttl">LG화학, 배터리 리사이클링 <br>기업 재영텍에 지분투자</p>
+                        <p class="info">
+                            <span>2023.08.01</span>
+                            <span>조회수 3,421</span>
+                        </p>
+                    </div>
+                </div>
+
                 <div class="container">
                     <section class="section1">
-                        <img src="../../assets/images/sub/img_news01.jpg" alt="" class="m_hide">
-                        <img src="../../assets/images/sub/img_news01_mo.jpg" alt="" class="pc_hide">
+                        <img src="../../assets/images/sub/img_news01.jpg" alt="">
                     </section>
                     <section class="section2">
                         <ul class="list">
@@ -151,6 +235,10 @@
                                     차별적인 기술로 경쟁력을 확보하고 향후 순황결제 구축에 앞장서는 기업이 될것으로 기대 됩니다.
                                 </div>
                                 <a href="#" class="reply_btn">답글</a>
+                                <div class="emoji_box">
+                                    <a href="#" class="btn1">31</a>
+                                    <a href="#" class="btn2">31</a>
+                                </div>
                                 <!-- 답글 영역 :: S -->
                                 <div class="reply_area">
                                     <ul class="reply_list">
@@ -170,6 +258,10 @@
                                             <div class="txt">
                                                 이번 지분 투자를 통해 글로벌 배터리 리사이클링 사업 진출의 초석을 마련할 수 있을것으로 생각됩니다.<br>
                                                 차별적인 기술로 경쟁력을 확보하고 향후 순황결제 구축에 앞장서는 기업이 될것으로 기대 됩니다.
+                                            </div>
+                                            <div class="emoji_box">
+                                                <a href="#" class="btn1">31</a>
+                                                <a href="#" class="btn2">31</a>
                                             </div>
                                         </li>
                                         <!-- 댓글 :: E -->
@@ -292,6 +384,19 @@
             </div>
         </div>
         <!-- // content -->
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container clearfix">
+                <span class="foot_logo">
+                    <img src="../../assets/images/common/foot_logo.png" alt="LG화학" class="m_hide">
+                    <img src="../../assets/images/common/foot_logo_mo.png" alt="LG화학" class="pc_hide">
+                </span>
+                <span class="copyright">©2023 LGChem All Rights Reserved.</span>
+                <a href="#" class="link">제보하기</a>
+            </div>
+        </footer>
+        <!-- // footer -->
     </div>
     <!-- // wrap -->
 </body>

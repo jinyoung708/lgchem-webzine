@@ -37,7 +37,7 @@ $(function(){
     
     $(window).on("scroll", function(){
         pageY = window.pageYOffset;
-        if(pageY>=$("#content").offset().top){
+        if(pageY>=$("#content").offset().top - 50 ){
             $("#header").addClass("scrolled");
         }
         else{

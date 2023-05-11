@@ -26,7 +26,6 @@
 .board_list li:hover .img_box .inner img {transform: scale(1.1);}
 
 
-.news_wrap {padding-top: 98px;}
 .news_wrap .container {max-width: 1116px;}
 .news_wrap .section1 {margin-bottom: 21px; font-size: 0;}
 .news_wrap .section2 {position: relative; display: flex; min-height: 518px; margin-bottom: 90px; align-items: center; padding-left: 322px; background: #eee;}
@@ -145,8 +144,15 @@
 .comment_box .comments_txt .comment_list > li .txt {clear: both; line-height: 1.6; font-size: 16px; font-weight: 300; color: #252525;}
 .comment_box .comments_txt .comment_list > li .reply_btn {display: inline-block; min-width: 69px; height: 27px; line-height: 25px; margin-top: 25px; padding: 0 5px; border: 1px solid #9e9e9e; text-align: center; font-size: 14px; color: #9e9e9e;}
 .comment_box .comments_txt .comment_list > li .reply_btn::before {display: inline-block; content: ''; width: 10px; height: 9px; margin-right: 8px; background: url('../images/sub/ico_arr_down.png') no-repeat center/contain; vertical-align: middle;}
-.comment_box .comments_txt .comment_list > li .reply_area {border-top: 1px solid #d7d7d7; margin-top: 30px;}
+.comment_box .comments_txt .comment_list > li > .emoji_box {margin-right: 70px; margin-top: 25px;}
+.comment_box .comments_txt .comment_list > li .emoji_box {float: right;}
+.comment_box .comments_txt .comment_list > li .emoji_box a {display: inline-block; min-width: 69px; height: 27px; line-height: 25px; padding: 0 6px; text-align: center; border: 1px solid #9e9e9e; font-size: 14px; color: #191919;}
+.comment_box .comments_txt .comment_list > li .emoji_box a::before {display: inline-block; content: ''; width: 19px; height: 18px; margin-top: -2px; margin-right: 8px; vertical-align: middle;}
+.comment_box .comments_txt .comment_list > li .emoji_box .btn1::before {background: url('../images/sub/ico_emoji02.png') no-repeat center/contain;}
+.comment_box .comments_txt .comment_list > li .emoji_box .btn2::before {background: url('../images/sub/ico_emoji03.png') no-repeat center/contain;}
+.comment_box .comments_txt .comment_list > li .reply_area {clear: both; border-top: 1px solid #d7d7d7; margin-top: 30px;}
 .comment_box .comments_txt .comment_list > li .reply_area .reply_list > li {padding: 30px 68px; background: url('../images/sub/ico_reply.png') no-repeat 33px 26px;}
+.comment_box .comments_txt .comment_list > li .reply_area .reply_list > li:not(.form)::after {display: block; content:''; clear: both;}
 .comment_box .comments_txt .comment_list > li .reply_area .reply_list > li.form {background-position: 33px 51px;}
 .comment_box .comments_txt .comment_list > li .reply_area .reply_list > li:not(:last-child) {border-bottom: 1px solid #d7d7d7;}
 .comment_box .comments_txt .comment_list > li .reply_area .reply_list > li .comment_form {border: none; background-color: #fff; padding: 0;}
@@ -171,6 +177,33 @@
 .recommendation_box .img_list.small > li .txt_box .txt {font-size: 20px;}
 
 
+.sub_top_box {display: flex; height: 325px; text-align: center; align-items: center;}
+.sub_top_box.bg_blue {margin-bottom: 105px; background-color: #6699cc; color: #fff;}
+.sub_top_box .menu {margin-bottom: 33px; font-size: 18px; font-weight: 300;}
+.sub_top_box .ttl {margin-bottom: 32px; font-size: 45px; font-weight: 500; line-height: 1.29;}
+.sub_top_box .txt {}
+.sub_top_box .info {font-size: 0;}
+.sub_top_box .info span {padding: 0 30px; font-size: 18px; font-weight: 300;}
+
+
+.board_top {overflow: hidden;}
+.board_top .write_btn {float: left;}
+.board_top .sch_box {float: right;}
+.board_tbl thead {background-color: #f7f7f7;}
+.board_tbl tbody tr {border-bottom: 1px solid #9e9e9e;}
+.board_tbl tbody td {text-align: center;}
+.board_tbl tbody td.ttl {text-align: left;}
+.pagination {position: relative; text-align: center;}
+.pagination .write_btn {position: absolute; left: 0; top: 0;}
+
+
+.board_write_wrap .ttl_box {}
+.board_write_wrap .text_style {}
+.board_write_wrap .text_box {}
+.board_write_wrap .btn_box {}
+
+
+
 
 @media screen and (max-width:991px) {
     .search_wrap .container {padding-top: 79px;}
@@ -192,7 +225,6 @@
     .board_list li .txt_box .info span::after {margin: 0 8px; margin-top: -2px; height: 6px;}
     
 
-    .news_wrap {padding-top: 60px;}
     .news_wrap .section1 {margin-left: -24px; margin-right: -24px; margin-bottom: 15px;}
     .news_wrap .section1 img {width: 100%;}
     .news_wrap .section2 {margin-left: 19px; margin-right: -24px; padding-left: 0; min-height: inherit;}
@@ -287,6 +319,10 @@
     .comment_box .comments_txt .comment_list > li .reply_btn::before {width: 7px; height: 6px; margin-right: 5px;}
     .comment_box .comments_txt .comment_list > li .reply_area .reply_list > li {padding: 21px 49px; background-position: 22px 19px; background-size: 11px;}
     .comment_box .comments_txt .comment_list > li .reply_area .reply_list > li.form {background-position: 22px 41px;}
+    .comment_box .comments_txt .comment_list > li .emoji_box {margin-top: 19px;}
+    .comment_box .comments_txt .comment_list > li > .emoji_box {margin-right: 50px;}
+    .comment_box .comments_txt .comment_list > li .emoji_box a {min-width: 50px; height: 20px; line-height: 20px; font-size: 11px;}
+    .comment_box .comments_txt .comment_list > li .emoji_box a::before {width: 13px; height: 12px; margin-right: 5px;}
 
 
     .recommendation_box {margin-top: 74px;}
@@ -298,4 +334,23 @@
     .recommendation_box .img_list > li .txt_box .txt {font-size: 14px;}
     .recommendation_box .img_list.small {display: none;}
 
+
+    .board_tbl thead tr,
+    .board_tbl tbody tr {display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+    .board_tbl tbody tr {padding: 0 10px;}
+    .board_tbl thead th.num,
+    .board_tbl tbody td.num {width: 20%;}
+    .board_tbl thead th.ttl,
+    .board_tbl tbody td.ttl {width: 80%;}
+    .board_tbl tbody td.num,
+    .board_tbl tbody td.ttl {border-bottom: 1px solid #000;}
+    .board_tbl tbody td:not(.num):not(.ttl) {padding: 0 10px;}
+    .board_tbl tbody td:not(.num):not(.ttl)::before {content: attr(data-title) ': ';}
+
+
+    .sub_top_box {height: 227px;}
+    .sub_top_box .menu {margin-bottom: 23px; font-size: 14px;}
+    .sub_top_box .ttl {margin-bottom: 22px; font-size: 24px;}
+    .sub_top_box .info span {position: relative; padding: 0 21px; font-size: 14px;}
+    .sub_top_box .info span:not(:last-child)::after {content: ''; position: absolute; right: 0; top: 50%; width: 1px; height: 12px; margin-top: -6px; background-color: #395572;} 
 }
