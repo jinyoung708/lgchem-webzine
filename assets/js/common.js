@@ -46,4 +46,15 @@ $(function(){
         
     });
     $(window).scroll();
+
+    $("#file").on('change',function(){
+        var fileName = $("#file").val();
+        $(".upload-name").val(fileName);
+      });
 });
+function openPopup(){
+    $(".form_layer_popup_wrap").addClass("show");
+}
+function closePopup(){
+    $(".form_layer_popup_wrap").removeClass("show");
+}

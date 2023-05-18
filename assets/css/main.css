@@ -28,6 +28,8 @@
 .section3 .banner_box .swiper-pagination .swiper-pagination-bullet {width: 13px; height: 12px; border: 1px solid #949494; background-color: #fff; opacity: 1; margin: 0 4px;}
 .section3 .banner_box .swiper-pagination .swiper-pagination-bullet-active {width: 43px; background-color: #7dcae8; border-color: #7dcae8; border-radius: 12px; }
 .section3 .banner_box a {display: block; position: relative; padding-bottom: 65.09%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.section3 .banner_box a .img_box {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.section3 .banner_box a .img_box img {width: 100%; height: 100%;}
 .section3 .banner_box .ttl {position: absolute; left: 16.23%; top: 23.19%; line-height: 1.2; font-size: 30px; font-weight: 500; }
 .section3 .event_box {position: relative; width: 48.58%; box-shadow: 14px 14px 50px 0px rgba(0, 0, 0, 0.1); border-radius: 2.21vw; overflow: hidden; background: url('../images/main/img05.jpg') no-repeat center/cover;}
 .section3 .event_box .inner {position: absolute; left: 16.23%; top: 16.95%;}
@@ -73,11 +75,13 @@
     .section2 .box-list li.chemistry .txt_box .more::before {display: block; content: ''; width: 23px; height: 1px; background-color: #b1b1b1; margin: 0 auto 9px;}
     
 
-    .section3 {gap: 0; max-width: 564px; margin: 92px auto 85px;}
+    .section3 {flex-wrap: wrap; gap: 0; max-width: 564px; margin: 92px auto 85px;}
+    .section3 .banner_box {width: 100%; margin-bottom: 50px;}
+    .section3 .banner_box .ttl {font-size: 20px;}
     .section3 .event_box {width: 100%; padding-bottom: 121.63%; background: url('../images/main/img06_mo.jpg') no-repeat 0 0/cover;}
     .section3 .event_box .inner {left: 0; top: auto; bottom: 0; width: 100%; text-align: center;}
     .section3 .event_box .t1 {color: #c10b34; font-size: 12px;}
-    .section3 .event_box .t2 {margin-bottom: 60px; font-size: 20px;}
+    .section3 .event_box .t2 {margin-bottom: 50px; font-size: 20px;}
     .section3 .event_box .more_btn {margin-bottom: 36px; height: auto; line-height: 1.2; background-color: transparent; color: #fff; font-size: 13px; font-weight: 500;}
     .section3 .event_box .more_btn::before {display: block; content: ''; width: 23px; height: 1px; background-color: #fff; margin: 0 auto 9px;}
     .section3 .event_box .more_btn::after {display: none;}
