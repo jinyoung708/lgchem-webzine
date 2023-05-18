@@ -35,6 +35,9 @@
 .news_wrap .section2 .list > li:not(:last-child) {margin-bottom: 34px;}
 .news_wrap .section2 .list > li::before {display: inline-block; content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 5px; background-color: #b06666;}
 .news_wrap .section2 .list > li ul li {font-weight: 300;}
+.news_wrap .btm_btn_box {margin-bottom: 20px; text-align: right;}
+.news_wrap .btm_btn_box a {display: inline-block; margin-left: 10px; vertical-align: middle;}
+.news_wrap .btm_btn_box a img {vertical-align: middle;}
 
 
 .sub_content .each {max-width: 800px; margin: 0 auto 90px; }

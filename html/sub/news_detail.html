@@ -187,6 +187,10 @@
                                 한 차원 더 높게 성장할 것”이라고 말했다</p>
                         </div>
                     </section>
+                    <div class="btm_btn_box">
+                        <a href="#" class="heart_btn"><img src="../../assets/images/sub/ico_heart_true.svg" alt=""> 42</a>
+                        <a href="javascript: void(0);" onclick="openPopup();" class="share_btn"><img src="../../assets/images/sub/ico_send.svg" alt=""> 0</a>
+                    </div>
                 </div>
             </div>
 
@@ -397,6 +401,58 @@
             </div>
         </footer>
         <!-- // footer -->
+
+        <!-- form_layer_popup_wrap -->
+        <div class="form_layer_popup_wrap">
+            <div class="bg"></div>
+            <div class="layer_popup">
+                <button type="button" onclick="closePopup()" class="close_btn">X</button>
+                <form class="form_box">
+                    <p class="pop_ttl">공유하기</p>
+                    <div class="top_box">
+                        <dl>
+                            <dt><img src="http://via.placeholder.com/120x120" alt=""></dt>
+                            <dd>
+                                <p class="sort">케미알람</p>
+                                <p class="ttl">[선공개] 한정판 굿즈 미리보기</p>
+                                <p class="date">2023.05.15</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="tbl_box">
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>보내는 사람</th>
+                                    <td>보내는사람</td>
+                                </tr>
+                                <tr>
+                                    <th><label for="formTtl">받는사람</label></th>
+                                    <td><input type="text" name="formTtl" id="formTtl" placeholder="받으실 분의 이름 또는 이메일을 검색해주세요 (사외 발송 불가)"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="formTtl">제목</label></th>
+                                    <td><input type="text" name="formTtl" id="formTtl" placeholder="제목을 입력해주세요"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="formTxt">내용</label></th>
+                                    <td><textarea name="formTxt" id="formTxt" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_box">
+                        <a href="#" class="btn">취소</a>
+                        <a href="#" class="btn bg_grey">보내기</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- // form_layer_popup_wrap -->
     </div>
     <!-- // wrap -->
 </body>

@@ -291,30 +291,36 @@
                 <button type="button" onclick="closePopup()" class="close_btn">X</button>
                 <form class="form_box">
                     <img src="http://via.placeholder.com/900x300" alt="">
-                    <table>
-                        <colgroup>
-                            <col style="width: 100px;">
-                            <col style="width: auto;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th><label for="formTtl">제목</label></th>
-                                <td><input type="text" name="formTtl" id="formTtl"></td>
-                            </tr>
-                            <tr>
-                                <th><label for="formTxt"></label></th>
-                                <td><textarea name="formTxt" id="formTxt" cols="30" rows="10"></textarea></td>
-                            </tr>
-                            <tr>
-                                <th>첨부파일</th>
-                                <td class="filebox">
-                                    <input class="upload-name" value="첨부파일" placeholder="첨부파일">
-                                    <label for="file">파일찾기</label> 
-                                    <input type="file" id="file">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="tbl_box">
+                        <table>
+                            <colgroup>
+                                <col style="width: 80px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><label for="formTtl">제목</label></th>
+                                    <td><input type="text" name="formTtl" id="formTtl"></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="formTxt">내용</label></th>
+                                    <td><textarea name="formTxt" id="formTxt" cols="30" rows="10"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td class="filebox">
+                                        <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+                                        <label for="file">파일찾기</label>
+                                        <input type="file" id="file">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_box">
+                        <a href="#" class="btn">취소</a>
+                        <a href="#" class="btn bg_grey">보내기</a>
+                    </div>
                 </form>
             </div>
         </div>
