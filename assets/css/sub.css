@@ -19,10 +19,15 @@
 .board_list li .img_box .inner::after {display: inline-block; content: ''; width: 0; height: 100%; vertical-align: middle;}
 .board_list li .txt_box {position: relative; width: calc(100% - 336px); padding: 38px 64px;}
 .board_list li .txt_box .ttl {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 26px; font-weight: 500; }
-.board_list li .txt_box .info {position: absolute; left: 64px; bottom: 33px; font-size: 0;}
+.board_list li .txt_box .info {position: absolute; left: 64px; bottom: 80px; font-size: 0;} /* 20230610 수정 */
 .board_list li .txt_box .info span {display: inline-block; font-size: 18px; font-weight: 300; color: #898989; vertical-align: middle;}
 .board_list li .txt_box .info span::after {display: inline-block; content: ''; width: 1px; height: 16px; margin: -3px 27px 0; background-color: #898989; vertical-align: middle;}
 .board_list li .txt_box .info span:last-child::after {display: none;}
+/* 20230610 추가 :: S */
+.board_list li .txt_box .state {position: absolute; left: 64px; right: 64px; bottom: 33px; font-size: 14px; font-weight: 300; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} 
+.board_list li .txt_box .state span {display: inline-block; width: 35px; height: 35px; line-height: 35px; border-radius: 50%; background-color: #e00075; color: #fff; text-align: center; font-size: 10px; margin-right: 5px; vertical-align: middle;}
+.board_list li .txt_box .state.end span {background-color: #898989;}
+/* 20230610 추가 :: E */
 .board_list li:hover .img_box .inner img {transform: scale(1.1);}
 
 
@@ -86,7 +91,7 @@
 
 
 .thumb_wrap {padding-top: 121px;}
-.thumb_wrap .thumb_list {display: flex; flex-wrap: wrap; gap: 2.99%;}
+.thumb_wrap .thumb_list {display: flex; flex-wrap: wrap; gap: 2.99%; padding: 0 7%;} /* 20230610 수정 */
 .thumb_wrap .thumb_list > li {width: 31.3%; box-shadow: 14px 14px 50px 0px rgba(0, 0, 0, 0.1); border-radius: 2.21vw; overflow: hidden;}
 .thumb_wrap .thumb_list > li:nth-child(n+4) {margin-top: 2.99%;}
 .thumb_wrap .thumb_list > li a {display: block;}
@@ -94,9 +99,16 @@
 .thumb_wrap .thumb_list > li .img_box .inner {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .thumb_wrap .thumb_list > li .img_box .inner::after {display: inline-block; content: ''; width: 0; height: 100%; vertical-align: middle;}
 .thumb_wrap .thumb_list > li .img_box .inner img {vertical-align: middle; max-height: 100%; transition: all 0.3s;}
-.thumb_wrap .thumb_list > li .txt_box {position: relative; min-height: 227px; padding: 24px 36px;}
-.thumb_wrap .thumb_list > li .txt_box .ttl {display: -webkit-box; line-height: 1.3em; max-height: 3.9em; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size: 26px; font-weight: 500; overflow: hidden;}
-.thumb_wrap .thumb_list > li .txt_box .date {position: absolute; left: 36px; bottom: 30px; font-size: 18px; font-weight: 300; color: #898989;}
+/* 20230610 수정 :: S */
+.thumb_wrap .thumb_list > li .txt_box {position: relative; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px 36px;} 
+.thumb_wrap .thumb_list > li .txt_box .ttl {display: -webkit-box; line-height: 1.3em; height: 3.9em; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size: 26px; font-weight: 500; overflow: hidden; margin-bottom: 13px;}
+.thumb_wrap .thumb_list > li .txt_box .date {font-size: 18px; font-weight: 300; color: #898989;} 
+/* 20230610 수정 :: E */
+/* 20230610 추가 :: S */
+.thumb_wrap .thumb_list > li .txt_box .state {margin-bottom: 10px; font-size: 12px; font-weight: 300; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} 
+.thumb_wrap .thumb_list > li .txt_box .state span {display: inline-block; width: 35px; height: 35px; line-height: 35px; border-radius: 50%; background-color: #e00075; color: #fff; text-align: center; font-size: 10px; margin-right: 5px; vertical-align: middle;}
+.thumb_wrap .thumb_list > li .txt_box .state.end span {background-color: #898989;}
+/* 20230610 추가 :: E */
 .thumb_wrap .thumb_list > li:hover .img_box .inner img {transform: scale(1.1);}
 
 
@@ -188,10 +200,10 @@
 
 
 .board_top {overflow: hidden; margin-bottom: 19px;}
-.board_top .write_btn {float: left; display: inline-block; min-width: 135px; height: 50px; line-height: 48px; padding: 0 5px; border: 1px solid #9e9e9e; font-size: 18px; font-weight: 500; color: #191919; text-align: center;}
+.board_top .write_btn {float: left; display: inline-block; min-width: 135px; height: 50px; line-height: 48px; padding: 0 5px; border: 1px solid #9e9e9e; font-size: 18px; font-weight: 500; color: #191919; text-align: center; border-radius: 25px;} /* 20230610 수정 */
 .board_top .sch_box {position: relative; float: right;}
-.board_top .sch_box select {min-width: 135px; height: 50px; padding-right: 30px; border: 1px solid #9e9e9e; background: url('../images/sub/ico_arr_down02.png') no-repeat right 17px center; appearance: none; text-align: center; font-size: 18px; font-weight: 500; color: #191919;}
-.board_top .sch_box input {min-width: 385px; height: 50px; padding: 0 50px 0 30px; border: 1px solid #9e9e9e; font-size: 18px;}
+.board_top .sch_box select {min-width: 135px; height: 50px; padding-right: 30px; border: 1px solid #9e9e9e; background: url('../images/sub/ico_arr_down02.png') no-repeat right 17px center; appearance: none; text-align: center; font-size: 18px; font-weight: 500; color: #191919; border-radius: 25px;} /* 20230610 수정 */
+.board_top .sch_box input {min-width: 385px; height: 50px; padding: 0 50px 0 30px; border: 1px solid #9e9e9e; font-size: 18px; border-radius: 25px;} /* 20230610 수정 */
 .board_top .sch_box input::placeholder {font-weight: 300; color: #9e9e9e;}
 .board_top .sch_box .sch_btn {display: inline-block; position: absolute; right: 0; top: 50%; width: 50px; height: 49px; transform: translateY(-50%); background: url('../images/sub/ico_sch02.png') no-repeat center;}
 .board_tbl {border-top: 1px solid #9e9e9e; table-layout: fixed;}
@@ -273,13 +285,14 @@
     .search_wrap .tab_list li a {font-size: 12px;}
     
 
-    .board_list li .img_box {width: 90px; height: 88px;}
+    .board_list li .img_box {width: 120px; height: 108px;} /* 20230610 수정 */
     .board_list li .img_box .inner img {width: 100%; height: 100%;}
-    .board_list li .txt_box {width: calc(100% - 90px); padding: 12px 13px;}
+    .board_list li .txt_box {width: calc(100% - 120px); padding: 12px 13px;} /* 20230610 수정 */
     .board_list li .txt_box .ttl {font-size: 12px;}
-    .board_list li .txt_box .info {left: 13px; bottom: 12px;}
+    .board_list li .txt_box .info {left: 13px; bottom: 55px;} /* 20230610 수정 */
     .board_list li .txt_box .info span {font-size: 10px;}
     .board_list li .txt_box .info span::after {margin: 0 8px; margin-top: -2px; height: 6px;}
+    .board_list li .txt_box .state {left: 13px; bottom: 12px; right: 13px; font-size: 10px;} /* 20230610 추가 */
     
 
     .news_wrap .section1 {margin-left: -24px; margin-right: -24px; margin-bottom: 15px;}
@@ -329,11 +342,11 @@
 
 
     .thumb_wrap {padding-top: 45px;}
-    .thumb_wrap .thumb_list {gap: 8px; max-width: 563px; margin: 0 auto;}
+    .thumb_wrap .thumb_list {gap: 8px; max-width: 563px; margin: 0 auto; padding: 0;} /* 20230610 수정 */
     .thumb_wrap .thumb_list > li {width: calc(50% - 4px);}
     .thumb_wrap .thumb_list > li:nth-child(n+3) {margin-top: 23px;}
-    .thumb_wrap .thumb_list > li .txt_box {min-height: 100px; padding: 15px;}
-    .thumb_wrap .thumb_list > li .txt_box .ttl {font-size: 13px;}
+    .thumb_wrap .thumb_list > li .txt_box {padding: 15px;} /* 20230610 수정 */
+    .thumb_wrap .thumb_list > li .txt_box .ttl {font-size: 13px; margin-bottom: 22px;} /* 20230610 수정 */
     .thumb_wrap .thumb_list > li .txt_box .date {left: 15px; bottom: 12px; font-size: 12px;}
 
 

@@ -25,11 +25,13 @@ img {max-width: 100%;}
 #header .gnb_header .btn-box .global-btn {display: inline-block; width: 25px; height: 24px; background: url('../images/common/ico_global.png') no-repeat center;}
 #header .gnb_header .btn-box .sch-btn {display: inline-block; width: 25px; height: 24px; background: url('../images/common/ico_search.png') no-repeat center;}
 #header .gnb_header .btn-box .txt {display: inline-block; font-size: 14px; vertical-align: middle;}
-#header .gnb_box {padding: 0 130px;}
-#header .gnb_box .gnb {display: inline-flex; justify-content: space-around; gap: 36px;}
-#header .gnb_box .gnb > li {position: relative;}
+ /* 20230610 수정 :: S */
+#header .gnb_box {padding: 0 90px;}
+#header .gnb_box .gnb {display: inline-flex; justify-content: space-around;}
+#header .gnb_box .gnb > li {position: relative; padding: 0 35px;}
+ /* 20230610 수정 :: E */
 #header .gnb_box .gnb > li > a {position: relative; display: flex; align-items: center; height: 38px; font-size: 20px; font-weight: 300; color: #000; text-transform: uppercase;}
-#header .gnb_box .gnb > li > a::after {display: inline-block; content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background-color: #404040; transition: width 0.3s;}
+#header .gnb_box .gnb > li > a::after {display: inline-block; content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background-color: #404040;} /* 20230610 수정 */
 #header .gnb_box .gnb > li:hover > a::after {width: 100%;}
 #header .gnb_box .gnb > li .sub_gnb {display: none; position: absolute; z-index: 1; left: 0; top: 100%; width: 100%; text-align: center;}
 #header .gnb_box .gnb > li .sub_gnb > li {margin-top: 10px;}
