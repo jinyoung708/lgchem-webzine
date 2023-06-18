@@ -20,6 +20,24 @@
 .section2 .box-list li .txt_box .ttl {display: -webkit-box; -webkit-line-clamp: 2; min-height: 0.65em; line-height: 1.3em; -webkit-box-orient: vertical; overflow: hidden; font-size: 26px; font-weight: 500; }
 .section2 .box-list li .txt_box .date {position: absolute; left: 36px; bottom: 40px; font-size: 18px; font-weight: 300; color: #898989;}
 .section2 .box-list li:hover .img_box img {transform: scale(1.1);}
+/* 20230618 추가 :: S */
+.section2 .img_list {position: relative; display: flex; width: 100%; gap: 2.83%;}
+.section2 .img_list > div {flex: 1;}
+.section2 .img_list > .big {}
+.section2 .img_list > .big a {position: sticky; top: 130px; transition: top .2s ease-in-out;}
+.section2 .img_list > .small {max-width: 31.31%;}
+.section2 .img_list > .small a:not(:last-child) {margin-bottom: 40px;}
+.section2 .img_list a {display: block; box-shadow: 7px 13px 48px 12px rgba(0, 0, 0, 0.1); border-radius: 30px; overflow: hidden;}
+.section2 .img_list .txt_box {padding: 40px 50px;}
+.section2 .img_list .txt_box .sort {color: #00aeef; font-size: 18px; margin-bottom: 5px; text-transform: uppercase;}
+.section2 .img_list .txt_box .ttl {margin-bottom: 40px; color: #191919; font-size: 40px; line-height: 1.35; height: 2.7em; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; letter-spacing: -0.05em;}
+.section2 .img_list .txt_box .date {color: #898989; font-size: 18px; font-weight: 300;}
+.section2 .img_list .img_box {font-size: 0; position: relative; padding-bottom: 68.94%;}
+.section2 .img_list .img_box .inner {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.section2 .img_list .img_box .inner img {width: 100%; height: 100%;}
+.section2 .img_list > .small .txt_box {padding-bottom: 33px;}
+.section2 .img_list > .small .txt_box .ttl {font-size: 28px; height: 4.05em; -webkit-line-clamp: 3;}
+/* 20230618 추가 :: E */
 
 
 .section3 {display: flex; gap: 3.07%; margin-top: 39px; margin-bottom: 160px; padding: 0 7%;} /* 20230610 수정 */
@@ -75,17 +93,35 @@
     .section2 .box-list li.chemistry .txt_box {min-height: inherit; padding: 6px 30px 30px;}
     .section2 .box-list li.chemistry .txt_box .more {margin-top: 36px; font-size: 13px; font-weight: 500; }
     .section2 .box-list li.chemistry .txt_box .more::before {display: block; content: ''; width: 23px; height: 1px; background-color: #b1b1b1; margin: 0 auto 9px;}
+    /* 20230618 추가 :: S */
+    .section2 .img_list {max-width: 564px; margin: 0 auto;}
+    .section2 .img_list > .big {display: none;}
+    .section2 .img_list > .small {max-width: 100%;}
+    .section2 .img_list > .small a:not(:last-child) {margin-bottom: 35px;}
+    .section2 .img_list .txt_box {padding: 35px 40px;}
+    .section2 .img_list .txt_box .sort {font-size: 16px;}
+    .section2 .img_list .txt_box .ttl {margin-bottom: 28px;}
+    .section2 .img_list .txt_box .date {font-size: 12px;}
+    .section2 .img_list > .small .txt_box {padding-bottom: 21px;}
+    .section2 .img_list > .small .txt_box .ttl {font-size: 25px;}
+    /* 20230618 추가 :: E */
     
 
-    .section3 {flex-wrap: wrap; gap: 0; max-width: 564px; margin: 92px auto 85px; padding: 0;} /* 20230610 수정 */
-    .section3 .banner_box {width: 100%; margin-bottom: 50px;}
-    .section3 .banner_box .ttl {font-size: 20px;}
-    .section3 .event_box {width: 100%; padding-bottom: 121.63%; background: url('../images/main/img06_mo.jpg') no-repeat 0 0/cover;}
-    .section3 .event_box .inner {left: 0; top: auto; bottom: 0; width: 100%; text-align: center;}
-    .section3 .event_box .t1 {color: #c10b34; font-size: 12px;}
+    /* 20230618 수정 :: S */
+    .section3 {flex-wrap: wrap; gap: 0; max-width: 564px; margin: 35px auto 85px; padding: 0;} /* 20230610 수정 */ 
+    .section3 .banner_box {width: 100%; margin-bottom: 35px;}
+    .section3 .banner_box a {padding-bottom: 100.35%; background-size: contain;}
+    .section3 .banner_box .ttl {font-size: 20px; left: 15%;}
+    .section3 .event_box {width: 100%; padding-bottom: 100.35%; background: url('../images/main/img06_mo02.jpg') no-repeat 0 0/cover;}
+    .section3 .event_box .inner {left: 15%; top: 59px;}
+    .section3 .event_box .t1 {font-size: 14px;}
+    .section3 .event_box .t2 {font-size: 23px; margin-bottom: 20px;}
+    .section3 .event_box .more_btn {min-width: 100px; height: 25px; line-height: 25px; font-size: 10px;}
+    /* .section3 .event_box .t1 {color: #c10b34; font-size: 12px;}
     .section3 .event_box .t2 {margin-bottom: 50px; font-size: 20px;}
     .section3 .event_box .more_btn {margin-bottom: 36px; height: auto; line-height: 1.2; background-color: transparent; color: #fff; font-size: 13px; font-weight: 500;}
     .section3 .event_box .more_btn::before {display: block; content: ''; width: 23px; height: 1px; background-color: #fff; margin: 0 auto 9px;}
-    .section3 .event_box .more_btn::after {display: none;}
+    .section3 .event_box .more_btn::after {display: none;} */
+    /* 20230618 수정 :: E */
     
 }
